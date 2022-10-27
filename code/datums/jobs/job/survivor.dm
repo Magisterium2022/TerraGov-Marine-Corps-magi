@@ -17,15 +17,6 @@
 		C.equip_to_slot_or_del(new /obj/item/clothing/shoes/snow(C), SLOT_SHOES)
 		C.equip_to_slot_or_del(new /obj/item/clothing/gloves/black(C), SLOT_GLOVES)
 
-	var/weapons = pick(SURVIVOR_WEAPONS)
-	var/obj/item/weapon/W = weapons[1]
-	var/obj/item/ammo_magazine/A = weapons[2]
-	C.equip_to_slot_or_del(new /obj/item/belt_harness(C), SLOT_BELT)
-	C.put_in_hands(new W(C))
-	C.equip_to_slot_or_del(new A(C), SLOT_IN_BACKPACK)
-	C.equip_to_slot_or_del(new A(C), SLOT_IN_BACKPACK)
-	C.equip_to_slot_or_del(new A(C), SLOT_IN_BACKPACK)
-
 	C.equip_to_slot_or_del(new /obj/item/clothing/glasses/welding(C), SLOT_GLASSES)
 	C.equip_to_slot_or_del(new /obj/item/storage/pouch/tools/full(C), SLOT_R_STORE)
 	C.equip_to_slot_or_del(new /obj/item/storage/pouch/survival/full(C), SLOT_L_STORE)
@@ -100,7 +91,7 @@ Good luck, but do not expect to survive."})
 	outfit = /datum/outfit/job/survivor/doctor
 
 
-/datum/outfit/job/survivor/doctor
+/*/datum/outfit/job/survivor/doctor
 	name = "Doctor's Assistant Survivor"
 	jobtype = /datum/job/survivor/doctor
 
@@ -123,7 +114,7 @@ Good luck, but do not expect to survive."})
 	w_uniform = /obj/item/clothing/under/liaison_suit
 	wear_suit = /obj/item/clothing/suit/armor/bulletproof
 	shoes = /obj/item/clothing/shoes/black
-	back = /obj/item/storage/backpack/satchel/norm
+	back = /obj/item/storage/backpack/satchel/norm*/
 
 
 //Security Guard
@@ -144,7 +135,7 @@ Good luck, but do not expect to survive."})
 
 
 //Civilian
-/datum/job/survivor/civilian
+/*/datum/job/survivor/civilian
 	title = "Civilian Survivor"
 	outfit = /datum/outfit/job/survivor/civilian
 
@@ -289,4 +280,14 @@ Good luck, but do not expect to survive."})
 	wear_suit = /obj/item/clothing/suit/armor/rugged
 	shoes = /obj/item/clothing/shoes/ruggedboot
 	back = /obj/item/storage/backpack/satchel/rugged
-	gloves = /obj/item/clothing/gloves/ruggedgloves
+	gloves = /obj/item/clothing/gloves/ruggedgloves*/
+	
+/datum/job/survivor/scout
+	title = "Scout Survivor"
+	skills_type = /datum/skills/civilian/survivor/marshal
+	outfit = /datum/outfit/job/survivor/scout
+
+/datum/outfit/job/survivor/scout
+	w_uniform = /obj/item/clothing/under/gimmick/rambo
+	shoes = /obj/item/clothing/shoes/marine
+	back = /obj/item/storage/backpack/satchel/sec
