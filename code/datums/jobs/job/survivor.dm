@@ -82,6 +82,7 @@ Good luck, but do not expect to survive."})
 	wear_suit = /obj/item/clothing/suit/armor/vest
 	shoes = /obj/item/clothing/shoes/black
 	back = /obj/item/storage/backpack/satchel/tox
+	suit_store = /obj/item/weapon/gun/pistol/standard_pistol
 
 
 //Doctor
@@ -132,6 +133,7 @@ Good luck, but do not expect to survive."})
 	wear_suit = /obj/item/clothing/suit/armor/bulletproof
 	shoes = /obj/item/clothing/shoes/marine
 	back = /obj/item/storage/backpack/satchel/sec
+	suit_store = /obj/item/weapon/gun/smg/mp7
 
 
 //Civilian
@@ -291,3 +293,4 @@ Good luck, but do not expect to survive."})
 	w_uniform = /obj/item/clothing/under/gimmick/rambo
 	shoes = /obj/item/clothing/shoes/marine
 	back = /obj/item/storage/backpack/satchel/sec
+	suit_store = /obj/item/weapon/gun/shotgun/pump
